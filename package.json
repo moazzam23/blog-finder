@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export":"next build & next export"
+    "export": "next build & next export"
   },
   "dependencies": {
     "bootstrap": "^5.2.2",
@@ -19,5 +19,6 @@
   "devDependencies": {
     "eslint": "8.25.0",
     "eslint-config-next": "12.3.1"
-  }
+  },
+  "proxy": "http://localhost:3000"  
 }
