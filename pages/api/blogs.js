@@ -14,7 +14,7 @@ export default async function handler(req, res) {
   }
   res.status(200).json(Allblogs)   
 }
- export default function anotherhandler(req, res) {
+ function anotherhandler(req, res) {
    fs.readFile("blogs/javascript.json","utf-8",(err,data)=>{
      console.log('')
      res.status(200).json(JSON.parse(data))   
