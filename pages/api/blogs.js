@@ -13,6 +13,10 @@ export default async function handler(req, res) {
   myblog= await fs.promises.readFile(('blogdata/' + item),'utf-8')
   Allblogs.push(JSON.parse(myblog))
   
+  fs.readFile("blogs/javascript.json","utf-8",(err,data)=>{
+    console.log('')
+    res.status(200).json(JSON.parse(data))   
+  })
 
 
 // let data= await fs.promises.readdir("Blogdata");
@@ -34,11 +38,4 @@ res.status(200).json(Allblogs)
 //   })
 // import * as fs from 'fs';
 }
- export default function handler(req, res) {
 
-   fs.readFile("blogs/javascript.json","utf-8",(err,data)=>{
-     console.log('')
-     res.status(200).json(JSON.parse(data))   
-   })
- 
- }
