@@ -20,7 +20,7 @@ const BlogPost = ({ blog }) => {
     };
 
     fetchBlog();
-  }, [router.isReady]);
+  }, [router.isReady,router.query.slug]);
 
   return (
     <div className={styles.container}>

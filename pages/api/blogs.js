@@ -12,7 +12,7 @@ export default async function handler(req, res) {
   const item = data[index];
   myblog= await fs.promises.readFile(('blogdata/' + item),'utf-8')
   Allblogs.push(JSON.parse(myblog))
-  }
+  
 
 
 // let data= await fs.promises.readdir("Blogdata");
@@ -33,7 +33,7 @@ res.status(200).json(Allblogs)
 //     res.status(200).json(data)   
 //   })
 // import * as fs from 'fs';
-
+}
  export default function handler(req, res) {
 
    fs.readFile("blogs/javascript.json","utf-8",(err,data)=>{
