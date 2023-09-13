@@ -1,0 +1,51 @@
+.main {
+    min-height: 40vh;
+    padding: 2rem 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .subheading{
+    font-style: italic;
+    color: darkcyan;
+    text-align: center;
+  }
+  .card {
+    margin: 1rem;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 3px solid #0a0a0a;
+  border-radius: 22px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  max-width: 350px;
+  }
+  .grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 800px;
+  }
+  .card h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+.blog1{
+ 
+ cursor: pointer;
+}
+.para1{
+  max-width: 45vw;
+  
+}
